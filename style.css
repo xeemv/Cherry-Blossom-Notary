@@ -1,5 +1,5 @@
 html {  
-    background: url(images/cherry-blossoms.png) no-repeat center center fixed; background-size: cover; 
+    background: url(images/sky.png) no-repeat center center fixed; background-size: cover; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -13,3 +13,6 @@ html {
         - 3rd post down from the top of the page.
     */
 } 
+.social-icons{
+    align-content: center;
+}
