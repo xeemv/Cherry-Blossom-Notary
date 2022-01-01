@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cherry Blossom Notary - Learn more about your books</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+            <!-- 
+                - Main content area where we will see the book and logo
+                - col-md-8 is how many columns we will need it to take up space here 
+            -->
+            <div class="col-md-8">
+                <img src="./images/NotoryLogowhiteMed.png" class="responsive">
+                <div class="card mb-4"> <!--mb-4 is the margin-->
+                    <h2 class="card-header" id="fileName">Book Title</h2>
+                    <div class="card-body">
+                        <div class="displayBox scroll-box" id="fileContent">Select a book on the right.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+                - SideBar Content
+                - col-md-4, is the sidebar and will take up less space
+                - the search widget, most used words, etc.
+             -->
+            <div class="col-md-4"></div>
+          </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!-- 
+- starting project w/ b4-$ for the master template buller/html page 
+- jQuery first, then Popper.js, then Bootstrap JS ==> these files are being served up through a CDN and will need internet access in order for the files to be read as they are served through a 3rd party.
+- bootstrap will build the UI portion
+- fyi, bootstrap has a 12 column grid system
+    - everything must be in 12
+-->

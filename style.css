@@ -1,0 +1,15 @@
+html {  
+    background: url(images/cherry-blossoms.png) no-repeat center center fixed; background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    } 
+    /* If in case you wish to turn off the white bg in bootstrap */ 
+    body{ 
+    background-color: transparent; 
+    /*
+    - found this html backgroundd styling/code from: https://www.quora.com/How-do-I-make-the-background-image-responsive-in-Bootstrap
+    - code was posted by Abhilash Pillai, Online Educator at youtube.com/makdi (2016-present)
+        - 3rd post down from the top of the page.
+    */
+} 
