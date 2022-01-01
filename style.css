@@ -13,6 +13,29 @@ html {
         - 3rd post down from the top of the page.
     */
 } 
-.social-icons{
-    align-content: center;
+.responsive {
+    max-width: 75%;
+    height: auto;
+}
+img{
+    padding: 10px;
+}
+.displayBox{
+    width: 100%;
+    font-family: 'Shadows Into Light', cursive; /* took this font from my kanban board project */
+}
+.scroll-box{
+    overflow-y: auto; /* creating a scroll bar*/
+    height: 500px; /* so we dont have to read it one line at a time*/
+    float: left;
+    padding: 1rem;
+}
+.card{
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /* created this using url: https://cssgradient.io/ */
+}
+.form-control{
+    background: white
+}
+.btn{
+    background-color: thistle; /* color of the search button*/
 }

@@ -37,7 +37,39 @@
                 - col-md-4, is the sidebar and will take up less space
                 - the search widget, most used words, etc.
              -->
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <!-- Search Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5> <!-- h5 will give smaller text size compared to h2-->
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="keyword" placeholder="Search for....">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button" onclick="performMark()">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-footer" id="searchstat">
+                        <!-- this will appear w/ how many searches were matched in the footer -->
+                    </div>
+                </div>
+            
+            <!-- Select a Book Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Select a Book</h5>
+                <div class="card-body"> <!-- will be adding rows here-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-unstyled mb-0">
+                                <!-- we will be listing the books inside of these list tags-->
+                                <li><a href="#"></a>book 1</li>
+                                <li><a href="#"></a>book 2</li>
+                                <li><a href="#"></a>book 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
     </div>
@@ -56,4 +88,7 @@
 - fyi, bootstrap has a 12 column grid system
     - everything must be in 12
 - code line 28: social icons taken from my login-form project
+
+- md = tells it when to stack the containers and at what pixel width of the viewer's device need it to stack at that 
+    - the search box will drop to the bottom of the page if the size is too small
 -->
