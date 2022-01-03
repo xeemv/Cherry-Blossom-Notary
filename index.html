@@ -77,7 +77,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-unstyled mb-0" id="mostUsed">
-                                
+                                  <!-- will dynamically insert using template-ul-items from line 117 -->
                             </ul>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-unstyled mb-0" id="leastUsed">
-                                
+                               <!-- will dynamically insert using template-ul-items from line 117 -->
                             </ul>
                         </div>
                     </div>
@@ -103,7 +103,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-unstyled mb-0">
-                                
+                                <li id="docLength"></li>
+                                <li id="wordCount"></li>
+                                <li id="charCount"></li>
                             </ul>
                         </div>
                     </div>
@@ -112,6 +114,13 @@
           </div>
       </div>
     </div>
+    <script id="template-ul-items" type="text/template">
+        <li>
+           {{val}}
+        </li>    
+    </script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -136,4 +145,15 @@
 
 - Used site: https://cloudconvert.com/epub-to-txt to convert EPUB books to txt
 - downloaded books from google
+
+
+- <script id="template-ul-items" type="text/template">
+        <li>
+            {{val}}
+        </li>
+    </script>
+    - this is a template for adding items dynamically to the li section in the least used words and most used words
+    - will cause the browser to ignore the script tab since it is an unknown type
+
+
 -->
