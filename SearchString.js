@@ -51,20 +51,20 @@ function getDocStats(fileContent) {
     // it is technically an object but will be treated like a dictionary
     // it should hold multiple key-value pairs
 
-    // var uncommonWords = [];
+    var uncommonWords = [];
 
-    // //filter out the uncommon words
-    // //uncommonWords = filterStopWords(wordArray);
+    // filter out the uncommon words
+    //uncommonWords = filterStopWords(wordArray);
 
-    // // Count every word in the wordArry
-    // for (let word in uncommonWords) {
-    //     let wordValue = uncommonWords[word];
-    //     if (wordDictionary[wordValue] > 0) {
-    //         wordDictionary[wordValue] += 1;
-    //     } else {
-    //         wordDictionary[wordValue] = 1;
-    //     }
-    // }
+    // Count every word in the wordArry
+    for (let word in wordArray) {
+        let wordValue = wordArray[word];
+        if (wordDictionary[wordValue] > 0) {
+            wordDictionary[wordValue] += 1;
+        } else {
+            wordDictionary[wordValue] = 1;
+        }
+    }
 
     //sort the array
     let wordList = sortProperties(wordDictionary);
@@ -118,12 +118,9 @@ function sortProperties(obj) {
 
 /* 
 - function loadBook(fileName, displayName){ ---> this will load our fileName for the book and also pass the displayName
-
 - var xhr = new XMLHttpRequest(); --> can bring back a lot of files and we are using it to string back a txt file
     - this will create a request for us
-
 - xhr.onreadystatechange = function() {} --> any time something changes about this request, it's going to fire anonymous function
-
 - if (xhr.readyState == 4) --> 
     - tells us what is going on w/ this request
     - it has a start from 0 - 4
@@ -133,16 +130,12 @@ function sortProperties(obj) {
         - 3 = loading the file back
         - 4 = done 
     - readyState == 4 ---> this part is saying we want to do some thing that means the load from the file is actually completed
-
 - xhr.status == 200 -->  was it an okay transaction from the server/http
-
 - var elmnt = document.getElementById("fileContent");
     elmnt.scrollTop = 0; --->
         - this will scroll the user to the top when they decide to click on a different book
-
 - .txt files appear unformatted like how we are used to seeing
     - will need to parse that document using a regular expression
-
 - let text = fileContent.toLowerCase(); -->
     - this will convert everything in the file to lowercase
 */

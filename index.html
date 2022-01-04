@@ -23,9 +23,9 @@
                 <div class="card mb-4"> <!--mb-4 is the margin-->
                     <h2 class="card-header" id="fileName">Book Title</h2>
                     <div class="card-body">
-                        <div class="displayBox scroll-box" id="fileContent">Select a book on the right.</div>
+                        <div class="displayBox scroll-box" id="fileContent">Select a book on the right.....</div>
                     </div>
-                    <div class="card-footer text-muted" id="social-icons">
+                    <div class="card-footer text-muted d-flex justify-content-center" id="social-icons"> <!-- d-flex justify-content-center will center my socail media icons -->
                         <a href="https://www.facebook.com/" target="blank"><img src="images/fb.png"></a> <!--target="blank" will open a new tab. Thanks to Joey's tip from my cohort--><span class="mx-2">|</span>
                     <a href="https://www.tumblr.com/" target="blank"><img src="images/tw.png"></a> <!--target="blank" will open a new tab. Thanks to Joey's tip from my cohort--><span class="mx-2">|</span>
                     <a href="https://www.google.com/" target="blank"><img src="images/gp.png"></a> <!--target="blank" will open a new tab. Thanks to Joey's tip from my cohort-->
@@ -51,6 +51,7 @@
                     </div>
                     <div class="card-footer" id="searchstat">
                         <!-- this will appear w/ how many searches were matched in the footer -->
+                        
                     </div>
                 </div>
             
@@ -78,6 +79,7 @@
                         <div class="col-md-12">
                             <ul class="list-unstyled mb-0" id="mostUsed">
                                   <!-- will dynamically insert using template-ul-items from line 117 -->
+
                             </ul>
                         </div>
                     </div>
@@ -85,12 +87,13 @@
             </div>
             <!-- Least Used Words -->
             <div class="card my-4">
-                <h5 class="card-header">Least Used Words</h5>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-unstyled mb-0" id="leastUsed">
+                    <h5 class="card-header">Least Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul class="list-unstyled mb-0" id="leastUsed">
                                <!-- will dynamically insert using template-ul-items from line 117 -->
+
                             </ul>
                         </div>
                     </div>
@@ -100,15 +103,11 @@
             <div class="card my-4">
                 <h5 class="card-header">Document Stats</h5>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-unstyled mb-0">
-                                <li id="docLength"></li>
-                                <li id="wordCount"></li>
-                                <li id="charCount"></li>
-                            </ul>
-                        </div>
-                    </div>
+                        <ul class="list-unstyled mb-0">
+                            <li id="docLength"></li>
+                            <li id="wordCount"></li>
+                            <li id="charCount"></li>
+                        </ul>
                 </div>
             </div>
           </div>
