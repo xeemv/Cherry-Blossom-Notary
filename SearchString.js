@@ -146,21 +146,56 @@ function getStopWords() {
 function performMark() {
 
     // read the keyword
-    var keyword = document.getElementById('keyword').value;
-    var display = document.getElementById('fileContent');
+    var keyword = document.getElementById("keyword").value;
+    var display = document.getElementById("fileContent");
 
     var newContent = "";
 
     // find all the currently marked items
-    let spans = document.querySelectorAll("mark");
-    /*  <mark></mark>
+    let spans = document.querySelectorAll('mark');
+    
+    /*  <mark>Harry</mark>
     - this will look for tags by the name of mark in our code
     - will also look for tags in our code that would look like this
     - these 2 things will be looked for in our inner HTML and turn it into an array or a know list of nodes here so we can loop over and do stuff
     
     */
 
+    for (var i = 0; i < spans.length; i++){
+        spans[i].outerHTML = spans[i].innerHTML;
+    }
 
+
+    /*  <mark>Harry</mark>
+    - from this example, the outerHTML = <mark></mark>
+    - innerHTML = Harry
+    - code from line 164 will take this example and turn it into just Harry
+    */
+
+
+    // search
+    var re= new RegExp(keyword, "gi");
+    /*
+    - regExp = regular expression
+    - gi = global and case-insensitive
+    - basically, for the engine to look globally and we dont care what the case is (whether it is lower or upper)
+    */
+
+    var replaceText = "<mark id='markme'>$&</mark>";
+    var bookContent = display.innerHTML;
+    
+    // add the mark to the book content
+    newContent = bookContent.replace(re, replaceText);
+
+    display.innerHTML = newContent;
+    var count = document.querySelectorAll('mark').length;
+    document.getElementById("searchstat").innerHTML = "found " + count + " matches";
+
+    if (count > 0) {
+        var element = document.getElementById("markme");
+        element.scrollIntoView();
+    };
+    
 }
 
 
